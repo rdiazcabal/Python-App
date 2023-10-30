@@ -3,7 +3,7 @@ import azure.functions as func
 import requests
 from bs4 import BeautifulSoup
 
-def revisar_linea_de_texto(req):
+def check_line_text(req: func.HttpRequest, timerInfo: func.TimerRequest):
     url = "https://www.simplifiedlogistics.com/heartbeattest/heartBeatReport.aspx"
     text_object = "HeartBeat Status Good"
 
