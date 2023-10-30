@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def check_line_text(req: func.HttpRequest, timerInfo: func.TimerRequest):
-    url = "https://www.simplifiedlogistics.com/heartbeattest/heartBeatReport.aspx"
+    url = "https://azrstage.simplifiedlogistics.com/heartbeattest/heartBeatReport.aspx"
     text_object = "HeartBeat Status Good"
 
     response = requests.get(url)
